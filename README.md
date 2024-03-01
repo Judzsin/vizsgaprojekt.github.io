@@ -1,4 +1,3 @@
 # Vizsgaprojekt
 Lethal Omen
 
-## asd
