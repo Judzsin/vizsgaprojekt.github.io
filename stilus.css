@@ -22,8 +22,9 @@ body{
 
 .logo {
     
-    margin-top: -5px;
-    margin-left: -60px;
+    position: absolute; 
+    top: 5px; 
+    left: 10px;
     
 }
 
@@ -31,6 +32,13 @@ body{
 .navigacio{
     margin-top: -30px;
     
+}
+
+.navbar{
+
+    margin-top: 7px;
+    margin-left: 1095px;
+
 }
   
 
@@ -42,7 +50,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 40px 100px;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -51,8 +59,18 @@ header{
 
 }
 
+
+ /* Ezt innen elnevedd mert eltűnik a header a rosszbajba */
 header{
-    background-color: black;
+    background-image:url("headertextura.png");
+    
+
+}
+
+.felirat{
+
+    display: inline-block;
+
 }
 
 
