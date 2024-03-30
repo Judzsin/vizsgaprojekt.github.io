@@ -1,3 +1,0 @@
-# Vizsgaprojekt
-Lethal Omen
-
