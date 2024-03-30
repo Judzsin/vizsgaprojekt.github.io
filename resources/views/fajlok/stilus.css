@@ -1,0 +1,577 @@
+@import url("http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(112, 153, 241);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+
+
+.navigacio{
+    margin-top: -30px;
+    
+}
+
+
+
+
+
+/*Kezdőlap - Rólunk - Elérhetőségek - Bejelentkezés*/
+
+
+.navbar ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    white-space: nowrap; /* Hogy ne tördelje el a szavakat */
+
+    /* Ezek amivel beállítod a távolságot az opciók között */
+    margin: 25px; 
+    padding: 5px; 
+
+}
+
+
+
+.formazgatas{
+    font-size: 20px;
+}
+
+.checkgomb{
+
+    font-size: 30px;
+    color:white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+
+}
+
+#check{
+    display: none;
+}
+
+
+
+
+
+
+/*----------------------------------------------*/
+
+
+
+
+/*Ez meg itt a fejléc tesom --------------------------------------------*/
+
+
+header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+
+    background-image:url("headertextura.png");
+
+}
+
+
+/*------------------------------------------------------------------------*/
+
+
+/* Reszponzív logo beállítások */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 100%; /* Teljes szélességű logó */
+    max-width: 200px; /* Maximum szélesség 280 pixel */
+    height: auto;
+}
+
+@media only screen and (max-width: 280px) {
+    .logo {
+        top: 5px; /* Példa: az abszolút pozíció módosítása kisebb képernyőn */
+        left: 10px;
+    }
+}
+
+
+/* Lethal Omen felirat -----------------------*/
+
+.felirat{
+
+    display: inline-block;
+    margin-left: 130px;
+    color: aliceblue;
+    padding:1px;
+
+}
+.bombaszformasz{
+    
+    font-family: "fantasy";
+    font-size: 70px;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 700;
+    line-height: 24.5px;
+    display: inline-block;
+           
+
+} 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+/* Reszponzív genyo a mobilos felülethez */
+    /* Hamburger ikont állítja (3 vízszintes rövid vonal)*/
+.checkgomb{
+
+    font-size: 30px;
+    color:white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+
+
+#lecsekkolas{
+    display: none;
+}
+
+@media (max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+
+}
+@media (max-width:858px){
+
+    .checkgomb{
+        display:block;
+        
+    }
+    ul{
+        padding:0;
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+        /*Ezzel tudod a felugró ablatok fentebb vagy lentebb állítani*/
+         /* Ezt úgy állítgasd, hogy a hamburger ikont ne takarja be mert azzal tudjuk bezárni ezt a navbárat */
+        top: 200px;
+
+
+
+    }
+
+
+    .gombloginfel{
+        /*Ezzel hoztam egyvonalba a Bejelentkezést a többi opcióval, NE NYÚLJ HOZZÁ!*/
+        margin-left: 42px;
+        
+    }
+
+
+    
+
+    /* Navigációs menü formázása */
+    .navigacio .navbar ul {
+        list-style-type: none;
+        /*Milyen távol legyenek az opciók a felugró ablak tetejétől*/
+        padding: 65px;
+
+        /* Ez itt az érték, hogy honnan ugorjon elő az ablak, ne nyúlj hozzá*/
+        margin: 0;
+    }
+    
+
+    /*Ez a kódrészlet teszi egymás alá a cuccosokat (Bejelentkezés, Kezdőlap stb...)*/
+    .navigacio .navbar ul li {
+        /*Pontosabban itt a display block*/
+        display: block;
+        margin-bottom: 0; /* Ezzel a Bejelentkezés elem alatti térköz lesz nullázva */
+        padding: 0; /* Padding nullázása */
+
+
+    }
+    
+    /* Opciók formázása */
+    .navigacio .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+
+        /*Ezt innen kiveszed nagy hézag lesz az opciók között*/
+        display: block;
+        padding: 0px;
+    }
+    
+    /* Aktív állapotú opciók formázása */
+
+    /*--------------------------------------------------------------------------------------------------*/
+    
+    .navigacio .navbar ul li a:focus {
+        text-decoration: none !important; /* Aláhúzás eltávolítása */
+        color: inherit; /* Az aktív link színe az örökölt szín legyen */
+    }
+    
+
+    /*--------------------------------------------------------------------------------------------------*/
+    
+    /* Opciók szövegmérete */
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    
+    a:hover,a.active {
+        background: none;
+        color:#0082e6;
+    }
+    
+    /* Ha a #lecsekkolas id-jű elem meg van jelölve (például egy checkbox), az alatta lévő ul elem balra tolódik */
+    #lecsekkolas:checked ~ ul {
+        left:0;
+    }
+
+    
+}
+
+
+
+
+
+/*SEMMIHEZ NE NYÚLJ INNEN, EZEK FELELŐSEK A BEJELENTKEZÉS GOMBÉRT!!!*/
+.gombloginfel {
+
+    width: 150px;
+
+    /*Ne állítsd át, csak az alját tudod nyújtani vagy csökkenteni*/
+    height: 60px;
+
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+
+    /*Ezekhez itt ne nyúlj még akkor se ha leszakad az ég!!!*/
+
+    /*Animációt csinálja*/
+    transition: .5s;
+    /*Háttérszínet állítja átlátszóra*/
+    background: transparent;
+    /*Mutatókurzort jelenít meg az adott elem felett*/
+    cursor: pointer;
+
+}
+
+.gombloginfel:hover{
+    background: white;
+    color: black;
+}
+
+/*Ezzel a keretet tudod lentebb tolni, magát az egész keretet tolod, nem nyújtod vagy csökkented*/
+.gombloginfel .formazgatas {
+    margin-top: -13px; 
+}
+
+
+
+/* Ez húzza alá a navbár elemeit */
+
+.navbar ul li {
+    /*Ehhez itt ne nyúlj mert az összes opciót akkor aláhúzza a rosszbajba*/
+    position: relative;
+}
+
+.navbar ul li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    /* Az opciók alá helyezi a vonalat */
+    bottom: 40px; 
+    left: 0;
+    width: 100%;
+    /* Vonal vastagsága */
+    height: 4px; 
+    background: white;
+    border-radius: 5px;
+    /* Kezdetben nincs látható */
+    transform: scaleX(0);
+    /* Animáció a méretváltozáshoz */
+    transition: transform 0.3s; 
+}
+
+/* Amikor a kurzor fölé kerül egy menüelem */
+.navbar ul li:hover::after {
+    transform: scaleX(1);
+}
+
+/* Bejelentkezés aláhúzásának eltávolítása */
+    /* Ez pseudo elem (last-child) - kiválasztja az utolsó gyermek elemet az őt tartalmazó szülőelemen belül
+        Tehát a mostoha gyerek vagy a középső gyerek aki nem kapja meg az aláhúzást (legalsó listaelem) */
+.navbar ul li:last-child::after {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navigacio a{
+    position: relative;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+
+
+.navigacio a:hover::after{
+    transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
+.wrapper{
+    margin-top: 100px;
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease;
+    overflow: hidden;
+    transform: scale(0);
+}
+
+.wrapper.active-popup{
+    transform: scale(1);
+}
+
+.wrapper.active{
+    height: 520px;
+}
+.wrapper .bezaras{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: black;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor:pointer;
+    z-index: 1;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------*/
+.wrapper .form-box.bejelentkezes{
+   transition: transform .18s ease;
+   transform: translateX(0);
+}
+.wrapper.active .form-box.bejelentkezes{
+   transition: none;
+   transform: translateX(-400px);
+}
+
+.wrapper .form-box.regisztracio{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+.wrapper.active .form-box.regisztracio{
+    transition:  .18s ease;
+    transform: translateX(0);
+ }
+
+/* ---------------------------------------------------------------------------- */
+
+
+
+
+/* Elfelejtett jelszó igazítások -----------------------------------------------*/
+.form-box.elfelejtett-jelszo {
+    text-align: center; /* Szöveg középre igazítása */
+    display: flex; /* Flexbox elrendezés használata */
+    flex-direction: column; /* Oszlop irányú elrendezés */
+    align-items: center; /* Minden elem középre igazítása az oszlop irányában */
+}
+
+.form-box.elfelejtett-jelszo .bevitelimezo,
+.form-box.elfelejtett-jelszo .gomb {
+    max-width: 300px; /* Maximum szélesség beállítása */
+    margin: 0 auto; /* Középre igazítás */
+}
+
+/* ---------------------------------------------------------------------------- */
+
+
+
+.bevitelimezo{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+.bevitelimezo label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.bevitelimezo input:focus~label,
+.bevitelimezo input:valid~label {
+    top: -5px;
+
+}
+.bevitelimezo input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.bevitelimezo .ikon{
+    position: absolute;
+    right: 8px;
+    font-size: 20px;
+    color: white;
+    line-height: 57px;
+}
+
+.megjegyzelfelejt {
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.megjegyzelfelejt label input{
+    accent-color: white;
+    margin-right: 3px;
+}
+.megjegyzelfelejt a{
+    color: white;
+    text-decoration: none;
+} 
+.megjegyzelfelejt a:hover{
+    text-decoration: underline;
+}
+
+.gomb{
+    width: 100%;
+    height: 45px;
+    background: black;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
