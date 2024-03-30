@@ -1,5 +1,7 @@
 <?php
 
+/*Adat validálás*/
+
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;

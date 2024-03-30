@@ -91,3 +91,24 @@ nav .nav-link{
 
 }
 }
+
+.mt-10{
+    margin-top: 80px !important;
+}
+
+.anima{
+    animation: anima 2s normal forwards ease-in-out ;
+}
+
+
+
+@keyframes anima {
+ 0%{
+    opacity: 0%;
+   
+ }
+ 100%{
+    opacity: 100%;
+    
+ }
+}
