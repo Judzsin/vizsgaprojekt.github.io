@@ -112,3 +112,9 @@ nav .nav-link{
     
  }
 }
+/* szabalyzat.blade.omen-ben a kártyák méretének felbontása*/
+.kepmeretezes{
+
+    width: 20%; /* Például, a kép szélességét 50%-ra csökkenti */
+    margin-top: -25px; /* Például, elhelyezi a képet 20 pixellel lejjebb */
+}
