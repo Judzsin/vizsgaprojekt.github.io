@@ -49,27 +49,7 @@
 
 
 
-document.getElementById("cardContainer").addEventListener("mousemove", function(event) {
-    var container = document.getElementById("cardContainer");
-    var boundingRect = container.getBoundingClientRect();
-    var mouseX = event.clientX - boundingRect.left;
-    var mouseY = event.clientY - boundingRect.top;
 
-    var cards = container.querySelectorAll(".interactive-card");
-    cards.forEach(function(card) {
-        var cardBoundingRect = card.getBoundingClientRect();
-        var cardCenterX = cardBoundingRect.left + cardBoundingRect.width / 2;
-        var cardCenterY = cardBoundingRect.top + cardBoundingRect.height / 2;
-
-        var deltaX = mouseX - cardCenterX;
-        var deltaY = mouseY - cardCenterY;
-
-        var rotationX = deltaY / cardBoundingRect.height * -10;
-        var rotationY = deltaX / cardBoundingRect.width * 10;
-
-        card.style.transform = "rotateX(" + rotationX + "deg) rotateY(" + rotationY + "deg)";
-    });
-});
 
 
 
