@@ -7,17 +7,18 @@
 <h4 class="text-center mt-10 anima">A kártyákat két nagy csoportba tudjuk sorolni, a szörnyek osztálya és a varázslapok osztálya.</h4>
 
 <div class="text-center mt-10" id="cardContainer">
-    <img src="{{asset('img/kartyak/Battle of Legends.png')}}" class="img-fluid kepmeretezes">
-    <img src="{{asset('img/kartyak/Witch Hunter.png')}}" class="img-fluid kepmeretezes">
+    <img src="{{asset('img/kartyak/Battle of Legends.png')}}" class="img-fluid kepmeretezes card-img">
+    <img src="{{asset('img/kartyak/Witch Hunter.png')}}" class="img-fluid kepmeretezes card-img">
 </div>
 
 <h4 class="text-center mt-10 anima">A varázslapoknak csak képességeik vannak amik megvannak határozva, hogy meddig érvényesek vagy, hogy mikor lehet őket aktiválni. A szörnyeknek ellenben már vannak támadó (ATK) illetve életerő (HP) pontjaik. Vannak specifikusabb lények pl: Démonok, Istenek vagy Sárkányok amiknek megvannak határozva az idézési feltételeik pl: egy másik szörny áldozatával vagy varázskártya használatával.</h4>
 
 <div class="text-center mt-10" id="cardContainer">
-    <img src="{{asset('img/kartyak/Thor.png')}}" class="img-fluid kepmeretezes">
-    <img src="{{asset('img/kartyak/SaraZal.png')}}" class="img-fluid kepmeretezes">
-    <img src="{{asset('img/kartyak/Lord of the Dimensions.png')}}" class="img-fluid kepmeretezes">
+    <img src="{{asset('img/kartyak/Thor.png')}}" class="img-fluid kepmeretezes card-img">
+    <img src="{{asset('img/kartyak/SaraZal.png')}}" class="img-fluid kepmeretezes card-img">
+    <img src="{{asset('img/kartyak/Lord of the Dimensions.png')}}" class="img-fluid kepmeretezes card-img">
 </div>
+
 <br>
 <br>
 <h1 class="text-center mt-10 anima">Rulings (Vagyis a játék menete)</h1>
@@ -34,7 +35,8 @@
     (szörny/varázs) tudsz visszahozni szörnyeket. Egy kör nincs felosztva fázisokra, akkor támadhatsz, aktiválhatsz képességeket amikor akarsz viszont az ellenfeled körében varázslapokat, szörny képességeket nem aktiválhatsz kivéve ha a szörny vagy varázskártya ezt engedi. 
     Más kártyajátékokkal ellentétben vagy hasonlóan (mihez viszonyítva persze) itt minden kártya a pakli tartományban van, nincs extra deck vagy második pakli. 
 
-</h1>
+</h4>
+
 
 
 

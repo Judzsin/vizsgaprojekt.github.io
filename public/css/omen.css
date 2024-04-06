@@ -112,9 +112,28 @@ nav .nav-link{
     
  }
 }
+
+
 /* szabalyzat.blade.omen-ben a kártyák méretének felbontása*/
 .kepmeretezes{
 
-    width: 20%; /* Például, a kép szélességét 50%-ra csökkenti */
-    margin-top: -28px; /* Például, elhelyezi a képet 20 pixellel lejjebb */
+    width: 20%; 
+    margin-top: -28px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sötét árnyék hozzáadása */
 }
+
+
+.card-img {
+    filter: brightness(0%);
+}
+
+
+
+
+
+
+
+
+
+
+
