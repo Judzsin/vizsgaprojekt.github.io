@@ -122,11 +122,28 @@ nav .nav-link{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sötét árnyék hozzáadása */
 }
 
+.margo{
+    
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+
+.kattints{
+    font-size: 20px;
+}
 
 .card-img {
     filter: brightness(0%);
 }
 
+.center-button {
+    margin-left: 5%;
+    border: 1px solid black;
+    margin-bottom: 80px;
+    margin-top: 180px;
+}
 
 
 

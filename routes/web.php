@@ -11,8 +11,14 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+
 Route::get('/szabalyzat', function () {
     return view('szabalyzat');
 });
+
+Route::get('/omen', function () {
+    return view('omen');
+});
+
 
 
