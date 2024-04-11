@@ -19,6 +19,14 @@ Route::get('/szabalyzat', function () {
 Route::get('/omen', function () {
     return view('omen');
 });
+Route::get('/elerhetosegek', function () {
+    return view('elerhetosegek');
+});
+Route::get('/rolunk', function () {
+    return view('rolunk');
+});
+
+
 
 
 

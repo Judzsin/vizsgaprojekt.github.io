@@ -35,8 +35,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{url('elerhetosegek')}}" id="">Elérhetőségek</span></a>
                 </li>
-                
-                
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url('rolunk')}}" id="">Rólunk</span></a>
+                </li>
                 <li class="nav-item">
                 <a href="{{url('login')}}" class="gomb" id="bejelentkezesgomb">Bejelentkezés</span></a>
                 </li>
