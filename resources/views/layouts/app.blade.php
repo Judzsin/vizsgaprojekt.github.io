@@ -29,12 +29,13 @@
             <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('szabalyzat')}}" id="szabalyzat" onclick="playAudio()">Játékszabályzat</span></a>
+                    <a class="nav-link" href="{{url('szabalyzat')}}" id="szabalyzat">Játékszabályzat</span></a>
                 </li>
              
                 <li class="nav-item">
                     <a class="nav-link" href="#" id="rolunk">Rólunk</span></a>
                 </li>
+                
                 <li class="nav-item">
                     <a class="nav-link" href="#" id="elerhetosegek">Elérhetőségek</span></a>
                 </li>
