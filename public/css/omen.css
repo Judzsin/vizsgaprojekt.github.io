@@ -117,33 +117,53 @@ nav .nav-link{
 /* szabalyzat.blade.omen-ben a kártyák méretének felbontása*/
 .kepmeretezes{
 
-    width: 20%; 
-    margin-top: -28px; 
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sötét árnyék hozzáadása */
+    width: 20% !important; 
+    margin-top: -28px !important; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) !important; /* Sötét árnyék hozzáadása */
 }
 
 .margo{
     
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 40px !important;
+    margin-right: 40px !important;
 
 }
 
 
 .kattints{
-    font-size: 20px;
+    font-size: 20px !important;
 }
 
+
+/* Valamiért ha teszel ide !importantot nem jeleniti meg a kártyákat */
 .card-img {
     filter: brightness(0%);
 }
 
 .center-button {
-    margin-left: 5%;
-    border: 1px solid black;
-    margin-bottom: 80px;
-    margin-top: 180px;
+    margin-left: 5% !important;
+    border: 1px solid black !important;
+    margin-bottom: 80px !important;
+    margin-top: 180px !important;
 }
+
+
+.szabalyzat-felirat{
+
+    font-size: 70px;
+    font-family: "fantasy";
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 0 0 10px rgba(0, 19, 129, 0.8); /* Árnyék a szöveg mögött */
+    
+}
+  
+
+
+
+
+
+
 
 
 
