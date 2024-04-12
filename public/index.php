@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Database\QueryException;
+
 
 define('LARAVEL_START', microtime(true));
 
