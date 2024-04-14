@@ -6,11 +6,11 @@
 <h2 class="text-center mt-10 anima">
     Kik vagyunk?
 </h2>
-<h4 class="text-center mt-10 anima"><ul style="list-style-type: none;"><li>Több, mint hat éve vagyunk a Mátészalkai Gépészeti diákjai. A Lethal Omen csapat tagjai vagyunk, mi vagyunk a játék webshopjának fejlesztői.</li></ul></h4>
+<h4 class="text-center mt-10 anima"><ul style="list-style-type: none;"><li>A Lethal Omen csapat tagjai vagyunk, mi vagyunk a játék webshopjának fejlesztői.</li></ul></h4>
 <h2 class="text-center mt-10 anima">
     Célunk
 </h2>
-<h4 class="text-center mt-10 anima"><ul style="list-style-type: none;"><li>A weboldal folyamatos karbantartása, frissítése. Folyamatos naprakész állapot.</li></ul></h4>
+<h4 class="text-center mt-10 anima"><ul style="list-style-type: none;"><li>A weboldal folyamatos karbantartása, frissítése. Folyamatos naprakész állapot. A játék ország és világszintű elterjesztése.</li></ul></h4>
 <h2 class="text-center mt-10 anima">
     Mit csinálunk?
 </h2>

@@ -157,7 +157,10 @@ nav .nav-link{
     text-shadow: 0 0 10px rgba(0, 19, 129, 0.8); /* Árnyék a szöveg mögött */
     
 }
-  
+
+.background{
+    background-size:contain ;
+}
 
 
 
