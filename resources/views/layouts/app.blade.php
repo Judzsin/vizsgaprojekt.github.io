@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="{{ asset('css/omen.css')}}">
 </head>
 
-<body background="{{asset('img/hatterkep.gif')}}" alt="" background-size="contain">
-    
+<body >  
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ url('/omen') }}">

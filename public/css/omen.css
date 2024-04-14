@@ -157,16 +157,16 @@ nav .nav-link{
     text-shadow: 0 0 10px rgba(0, 19, 129, 0.8); /* Árnyék a szöveg mögött */
     
 }
-
-.background{
-    background-size:contain ;
+.hatter{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: "{{asset('img/hatter.jpg')}}";
 }
-
-
-
-
-
-
 
 
 
