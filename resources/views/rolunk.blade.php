@@ -6,7 +6,7 @@
 <h2 class="text-center mt-10 anima">
     Kik vagyunk?
 </h2>
-<h4 class="text-center mt-10 anima"><ul style="list-style-type: none;"><li>A Lethal Omen csapat tagjai vagyunk, mi vagyunk a játék webshopjának fejlesztői.</li></ul></h4>
+<h4 class="text-center mt-10 anima"><ul style="list-style-type: none; color: white;"><li>A Lethal Omen csapat tagjai vagyunk, mi vagyunk a játék webshopjának fejlesztői.</li></ul></h4>
 <h2 class="text-center mt-10 anima">
     Célunk
 </h2>
@@ -26,6 +26,7 @@
 <a class="btn btn-outline-secondary center-button" href="{{ url('/omen') }}">
     <h3>Vissza a főoldalra</h3>
 </a>
+
 
 
 @endsection
