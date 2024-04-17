@@ -3,8 +3,8 @@
 
 .navbar{
     min-height: 150px !important;
-    background-color: black !important;
-
+    background-color: transparent !important;
+    backdrop-filter: blur(20px);
 }
 
 
