@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1 class="text-center mt-10 anima">Elérhetőségek</h1>
+<h1 class="text-center mt-10 anima szoveg-felirat">Elérhetőségek</h1>
 <h4 class="text-center mt-10 anima">
    <ul style="list-style-type: none;">
     <li>Üzemeltető: Farkas Dávid, Semencki Dávid Károly, Tisza Tibor</li>

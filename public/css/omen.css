@@ -3,9 +3,13 @@
 
 .navbar{
     min-height: 150px !important;
-    background-color: black !important;
-
+    backdrop-filter: blur(20px) !important;
+    position:relative !important;
+   
+    
 }
+
+
 nav .nav-link{
     color: white !important;
     font-size: 25px;
@@ -150,7 +154,7 @@ nav .nav-link{
 }
 
 
-.szabalyzat-felirat{
+.szoveg-felirat{
 
     font-size: 70px;
     font-family: "fantasy";
@@ -159,6 +163,7 @@ nav .nav-link{
     text-shadow: 0 0 10px rgba(0, 19, 129, 0.8); /* Árnyék a szöveg mögött */
     
 }
+
 
 
 
