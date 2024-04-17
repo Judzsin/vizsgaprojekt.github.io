@@ -16,16 +16,14 @@ class KartyaController extends Controller
 
         if ($kartya->save()) {
             // A mentés sikeres volt
-            echo "A kártya sikeresen mentve.";
+            return "A kártya sikeresen mentve.";
         } else {
             // A mentés sikertelen volt, kezeljük a hibát
             // Például naplózd a hibát vagy dobjon kivételt
-            echo "A kártya mentése sikertelen.";
+            return "A kártya mentése sikertelen.";
         }
+        
     }
-
-
-
 
 }
 
