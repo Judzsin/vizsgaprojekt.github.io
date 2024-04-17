@@ -8,6 +8,10 @@
             <div class="input-group mb-3">
                 <input type="search" class="form-control" placeholder="Keresés..." aria-label="Keresés..." aria-describedby="button-addon2">
                 <button class="btn btn-outline-secondary" type="button" id="button-addon2">Keresés</button>
+
+
+                
+
             </div>
         </div>
     </div>
