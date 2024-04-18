@@ -9,21 +9,24 @@ class KartyaController extends Controller
 {
     public function create()
     {
-        $kartya = new Kartya();
-        $kartya->Kártyanév = 'Battle of Legends';
-        $kartya->Kártyakép = 'kartyak/Battle of Legends.png';
-        $kartya->Ár = 1000;
+        // Létrehozunk egy új kártyát és elmentjük
+        $kartya1 = new Kartya();
+        $kartya1->Kártyanév = 'Battle of Legends';
+        $kartya1->Kártyakép = 'kartyak/Battle of Legends.png';
+        $kartya1->Ár = 1000;
+        $kartya1->save();
 
-        if ($kartya->save()) {
-            // A mentés sikeres volt
-            return "A kártya sikeresen mentve.";
-        } else {
-            // A mentés sikertelen volt, kezeljük a hibát
-            // Például naplózd a hibát vagy dobjon kivételt
-            return "A kártya mentése sikertelen.";
-        }
-        
+        // Létrehozunk egy másik új kártyát és elmentjük
+        $kartya2 = new Kartya();
+        $kartya2->Kártyanév = 'Bringing On!';
+        $kartya2->Kártyakép = 'kartyak/Bringing On!.png';
+        $kartya2->Ár = 1100;
+        $kartya2->save();
+
+        // Jelzés a sikeres mentésről
+        return "Kártyák sikeresen mentve.";
     }
+
 
 }
 

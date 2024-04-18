@@ -11,4 +11,8 @@ class Kartya extends Model
         'Kártyanév', 'Kártyakép', 'Ár',
     ];
 
+    // Táblanév explicit megadása
+    protected $table = 'kartya';
+
+
 }
