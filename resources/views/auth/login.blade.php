@@ -1,4 +1,7 @@
 @extends('layouts.app')
+
+@section('content')
+
 <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
     <form method="POST" action="{{ route('login') }}">
         @csrf
@@ -47,5 +50,9 @@
         <div class="mt-3">
             <p>Nincs még fiókod? <a href="{{ route('register') }}" class="regisztral-link">Regisztráció</a></p>
         </div>
+
     </form>
 </div>
+
+@endsection
+

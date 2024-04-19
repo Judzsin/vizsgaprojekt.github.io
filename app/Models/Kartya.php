@@ -8,7 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Kartya extends Model
 {
     protected $fillable = [
-        'Kártyanév', 'Kártyakép', 'Ár',
+        'Kártyanév',
+        'Kártyakép',
+        'Ár',
     ];
 
     // Táblanév explicit megadása

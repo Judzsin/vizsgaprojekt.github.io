@@ -1,5 +1,7 @@
-
 @extends('layouts.app')
+
+@section('content')
+
 <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
     <form method="POST" action="{{ route('register') }}">
         @csrf
@@ -46,3 +48,6 @@
         </div>
     </form>
 </div>
+
+@endsection
+
