@@ -3,30 +3,62 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Kartya;
 
 class KartyaController extends Controller
 {
-    public function create()
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
     {
-        // Létrehozunk egy új kártyát és elmentjük
-        $kartya1 = new Kartya();
-        $kartya1->Kártyanév = 'Battle of Legends';
-        $kartya1->Kártyakép = 'kartyak/Battle of Legends.png';
-        $kartya1->Ár = 1000;
-        $kartya1->save();
-
-        // Létrehozunk egy másik új kártyát és elmentjük
-        $kartya2 = new Kartya();
-        $kartya2->Kártyanév = 'Bringing On!';
-        $kartya2->Kártyakép = 'kartyak/Bringing On!.png';
-        $kartya2->Ár = 1100;
-        $kartya2->save();
-
-        // Jelzés a sikeres mentésről
-        return "Kártyák sikeresen mentve.";
+        //
     }
 
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        //
+    }
 
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
+    {
+        //
+    }
 }
-
