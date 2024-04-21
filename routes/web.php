@@ -12,6 +12,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
+
 Route::get('/szabalyzat', function () {
     return view('szabalyzat');
 });
@@ -25,6 +26,8 @@ Route::get('/elerhetosegek', function () {
 Route::get('/rolunk', function () {
     return view('rolunk');
 });
+
+
 
 /*
 Route::get('/create',function(){

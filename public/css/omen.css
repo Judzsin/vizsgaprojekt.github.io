@@ -154,14 +154,141 @@ nav .nav-link{
 
 .szoveg-felirat{
 
-    font-size: 70px;
-    font-family: "fantasy";
-    font-weight: bold;
-    color: #000000;
-    text-shadow: 0 0 10px rgba(0, 19, 129, 0.8); /* Árnyék a szöveg mögött */
+    font-size: 70px !important;
+    font-family: "fantasy" !important;
+    font-weight: bold !important;
+    color: #000000 !important;
+    text-shadow: 0 0 10px rgba(0, 19, 129, 0.8) !important; /* Árnyék a szöveg mögött */
     
 }
+
+/*Login wrapper szerkeztése ------------------- */
   
+
+.wrapper-loginhez {
+    position: relative !important;
+    background: transparent !important;
+    width: 400px !important;
+    height: 400px !important;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5) !important;
+    border: 2px solid white !important;
+    border-radius: 40px !important;
+    /* 20-tól fentebb veszed homyályos lesz a wrapper box telos nézetben */
+    backdrop-filter: blur(8px) !important;
+    margin: 0 auto !important;
+}
+.wrapper-loginhez .pozicionalas {
+    position: relative !important;
+    width: 300px !important;
+    height: 200px !important;
+    margin: 0 auto !important;
+    margin-top: 20px !important;
+}
+
+@media only screen and (max-width: 430px) {
+    .wrapper-loginhez {
+
+        backdrop-filter:none !important;
+        background-color: #558196 !important; 
+        position: relative !important;
+        width: 120% !important; 
+        height: auto !important; 
+        margin: 0 auto !important;
+        /* Ez igazítja középre a dolgokat */
+        transform: translateX(-8%) !important; 
+        
+
+    }
+    .wrapper-loginhez .pozicionalas {
+        width: 100% !important; 
+        height: auto !important; 
+        margin-top: 10px !important;
+        margin-bottom: 12px !important;
+    }
+    .mb-3.d-flex {
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        gap: 10px; 
+
+    }
+
+    
+}
+
+
+.wrapper-registhez{
+
+    position: relative !important;
+    background: transparent !important;
+    width: 400px !important;
+    height: 500px !important;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5) !important;
+    border: 2px solid white !important;
+    border-radius: 40px !important;
+    /* 20-tól fentebb veszed homyályos lesz a wrapper box telos nézetben */
+    backdrop-filter: blur(8px) !important;
+    margin: 0 auto !important;
+
+}
+.wrapper-registhez .pozicionalas2{
+
+    position: relative !important;
+    width: 300px !important;
+    height: 200px !important;
+    margin: 0 auto !important;
+    margin-top: 20px !important;
+
+
+}
+@media only screen and (max-width: 430px) {
+    .wrapper-registhez {
+
+        backdrop-filter:none !important;
+        background-color:  #558196  !important; 
+        position: relative !important;
+        width: 130% !important; 
+        height: auto !important; 
+        margin: 0 auto !important;
+        /* Ez igazítja középre a dolgokat */
+        transform: translateX(-12%) !important; 
+        
+
+    }
+    .wrapper-registhez .pozicionalas2 {
+        width: 90% !important; 
+        height: auto !important; 
+        margin-top: 10px !important;
+        margin-bottom: 12px !important;
+    }
+
+}
+
+.p-white {
+    color: white !important;
+    font-family: "fantasy" !important;
+    font-weight: bold !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+.szerkeztes {
+    font-size: 20px !important;
+}
+
+.login-regist-gomb{
+
+    border-radius: 10px !important ;
+    color: white !important;
+    background-color: rgb(17, 140, 255) !important;
+    border:1px white solid !important;
+    font-size: 20px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+
+}
+
+
 
 
 
