@@ -14,7 +14,7 @@ class Kartya extends Model
     ];
 
     // Táblanév explicit megadása
-    protected $table = 'kartya';
+    protected $table = 'kartyak';
 
 
 }

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+use App\Models\Kartya;
 
 class KartyaController extends Controller
 {
@@ -11,7 +13,11 @@ class KartyaController extends Controller
      */
     public function index()
     {
-        //
+        // Lekérdezés az összes kártyáról a kartyak táblából
+        $kartyak = Kartya::all();
+        
+        // Az adatok átadása a nézetnek
+        return view('omen', ['kartyak' => $kartyak]);
     }
 
     /**
@@ -28,7 +34,10 @@ class KartyaController extends Controller
     public function store(Request $request)
     {
         
+        
+        
     }
+
 
     /**
      * Display the specified resource.

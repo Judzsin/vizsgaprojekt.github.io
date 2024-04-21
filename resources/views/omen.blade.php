@@ -17,6 +17,19 @@
     </div>
 </div>
 
+@foreach ($kartyak as $kartya)
+    @if ($kartya->Kártyakép == 'Battles of Legends.png')
+        <div class="kartya">
+            <h3>{{ $kartya->Kártyanév }}</h3>
+            <img src="{{ asset($kartya->Kártyakép) }}" alt="{{ $kartya->Kártyanév }}">
+            <p>Ár: {{ $kartya->Ár }} Ft</p>
+        </div>
+        @break
+    @endif
+@endforeach
+
+
+
 
 
 @endsection
