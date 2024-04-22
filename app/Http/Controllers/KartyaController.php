@@ -23,13 +23,7 @@ class KartyaController extends Controller
 
     public function show(string $id)
     {
-        $kartya = Kartya::find($id);
-    
-        if (!$kartya) {
-            abort(404);
-        }
-
-        return view('omen', ['kartya' => $kartya]);
+        
 
         
     }

@@ -19,13 +19,13 @@
 
 
 
-
-
 @foreach ($adat as $kartya)
 
     <div class="cards">
         
-        <p>{{$kartya->Kártyanév}}</p>
+        <p class="cards2">{{$kartya->Kártyanév}}</p>
+        <img src="{{ asset('storage/kartyak/'.$kartya->Kártyakép) }}">
+
     </div>
     
 @endforeach
