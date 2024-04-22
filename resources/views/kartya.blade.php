@@ -17,10 +17,6 @@
     </div>
 </div>
 
-
-
-
-
 @foreach ($adat as $kartya)
 
     <div class="cards">
@@ -29,11 +25,6 @@
     </div>
     
 @endforeach
-
-
-
-
-
 
 
 @endsection

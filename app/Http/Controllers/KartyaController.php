@@ -13,16 +13,32 @@ class KartyaController extends Controller
      */
     public function index()
     {
-        // Lekérdezés az összes kártyáról a kartyak táblából
-        $kartyak = Kartya::all();
         
-        // Az adatok átadása a nézetnek
-        return view('omen', ['kartyak' => $kartyak]);
+        $kartyak = Kartya::all();
+    
+
+        return view('omen')->with('adat',$kartyak);
+
+    }
+
+    public function show(string $id)
+    {
+        $kartya = Kartya::find($id);
+    
+        if (!$kartya) {
+            abort(404);
+        }
+
+        return view('omen', ['kartya' => $kartya]);
+
+        
     }
 
     /**
      * Show the form for creating a new resource.
      */
+
+    
     public function create()
     {
         //
@@ -42,10 +58,7 @@ class KartyaController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
-    {
-        //
-    }
+   
 
     /**
      * Show the form for editing the specified resource.

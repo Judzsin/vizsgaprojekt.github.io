@@ -23,7 +23,7 @@
 <h3 class="text-center mt-10 anima">Közösségi média</h3>
 <h4 class="text-center mt-10 anima"> Fejlesztés alatt :sad:</h4>
 
-<a class="btn btn-outline-secondary center-button" href="{{ url('/omen') }}">
+<a class="btn btn-outline-secondary center-button" href="{{ url('/') }}">
     <h3>Vissza a főoldalra</h3>
 </a>
 

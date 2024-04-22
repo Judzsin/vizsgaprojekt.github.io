@@ -56,7 +56,7 @@
 
 
 
-<a class="btn btn-outline-secondary center-button" href="{{ url('/omen') }}">
+<a class="btn btn-outline-secondary center-button" href="{{ url('/') }}">
     <h3>Vissza a főoldalra</h3>
 </a>
 
