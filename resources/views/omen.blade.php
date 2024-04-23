@@ -17,18 +17,21 @@
     </div>
 </div>
 
+<br>
+<div class="card-wrapper">
+    @foreach ($adat as $kartya)
+        @if ($loop->index % 3 == 0 && $loop->index != 0)
+            <br> 
+            </div>
+            <div class="card-wrapper"> 
+        @endif
+        <div class="cards">
+            <img src="{{ asset('storage/kartyak/'.$kartya->Kártyakép) }}" class="card-image">
+            <!--<p class="card-name">{{$kartya->Kártyanév}}</p>-->
+        </div>
+    @endforeach
+</div>
 
-
-@foreach ($adat as $kartya)
-
-    <div class="cards">
-        
-        <p class="cards2">{{$kartya->Kártyanév}}</p>
-        <img src="{{ asset('storage/kartyak/'.$kartya->Kártyakép) }}">
-
-    </div>
-    
-@endforeach
 
 
 

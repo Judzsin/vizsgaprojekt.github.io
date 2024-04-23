@@ -288,15 +288,47 @@ nav .nav-link{
 
 }
 
+
+
+
+.card-wrapper {
+    
+    display:flex !important;
+    flex-direction: wrap !important; 
+    justify-content: space-between;
+}
+
+
 .cards{
-    margin-left: 40%;
-    margin-right: 40%;
+    
+    height: 700px;
+    width: calc(50.33% - 200px);
+    
+ 
+}.card-image{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+  
+    
+    
 }
-
-.cards2{
+/*
+.card-name{
+    
     background-color: white;
+    border-radius: 10px ;
+    color: rgb(17, 140, 255) ;
+    border:1px rgb(17, 140, 255) solid ;
+    font-size: 20px ;
+    text-decoration: none ;
+    font-weight: bold ;
+    width: 300px;
+    margin-left: 26.5%;
 
 }
+
+*/
 
 
 
