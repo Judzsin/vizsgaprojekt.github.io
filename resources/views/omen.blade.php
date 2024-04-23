@@ -17,6 +17,7 @@
     </div>
 </div>
 
+
 <br>
 <div class="card-wrapper">
     @foreach ($adat as $kartya)
@@ -31,7 +32,6 @@
         </div>
     @endforeach
 </div>
-
 
 
 
