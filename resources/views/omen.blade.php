@@ -23,8 +23,8 @@
 
     <div class="cards">
         
-        <p class="cards2">{{$kartya->Kártyanév}}</p>
-        <img src="{{ asset('storage/kartyak/'.$kartya->Kártyakép) }}">
+        <p class="card-name">{{$kartya->Kártyanév}}</p>
+        <img src="{{ asset('img/kartyak/'.$kartya->Kártyakép) }}" class="card-image">
 
     </div>
     

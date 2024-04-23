@@ -2,7 +2,7 @@
 
 @section('content')
                  
-<h1 class="text-center mt-10 anima szoveg-felirat">Rólunk</h1>
+<h1 class="text-center mt-10 anima szoveg-felirat color: white;">Rólunk</h1>
 <h2 class="text-center mt-10 anima">
     Kik vagyunk?
 </h2>
