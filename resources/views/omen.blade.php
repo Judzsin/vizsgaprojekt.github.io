@@ -27,7 +27,7 @@
             <div class="card-wrapper"> 
         @endif
         <div class="cards">
-            <img src="{{ asset('storage/kartyak/'.$kartya->Kártyakép) }}" class="card-image">
+            <img src="{{ asset('img/kartyak/'.$kartya->Kártyakép) }}" class="card-image">
             <!--<p class="card-name">{{$kartya->Kártyanév}}</p>-->
         </div>
     @endforeach
