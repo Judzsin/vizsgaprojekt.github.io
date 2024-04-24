@@ -28,7 +28,7 @@
         @endif
         <div class="cards">
             <img src="{{ asset('storage/kartyak/'.$kartya->Kártyakép) }}" class="card-image">
-            <!--<p class="card-name">{{$kartya->Kártyanév}}</p>-->
+            <p class="card-price">{{$kartya->Ár}} Lethal Coin</p>
         </div>
     @endforeach
 </div>

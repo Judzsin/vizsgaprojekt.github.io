@@ -5,6 +5,13 @@
     min-height: 150px !important;
     background-color: transparent !important;
     backdrop-filter: blur(20px);
+    margin-left: 0 !important;
+}
+@media only screen and (max-width: 600px) {
+    .navbar {
+        width: 100%; 
+        display: flex;
+    }
 }
 
 
@@ -103,9 +110,6 @@ nav .nav-link{
     animation: anima 2s normal forwards ease-in-out ;
     color: white !important;
 }
-
-
-
 @keyframes anima {
  0%{
     opacity: 0%;
@@ -118,13 +122,77 @@ nav .nav-link{
 }
 
 
-/* szabalyzat.blade.omen-ben a kártyák méretének felbontása*/
+
+
+
+/*
+
+Azért van a 2 osztálynak ugyan olyan beállításai mert monitoros nézetben ezek a beállításokat akartam használni a 6 kártyaképhez,
+viszont telefonos nézetben a 3 kártya már összecsúszik ezekkel a beállításokkal ezért kellett nekik egy külön osztály,
+hogy külön kezeljem a 3 képet a "display: block;" beállítással ami a 3. képet egy új sorba teszi 600px vagy annál kisebb felbontásnál. 
+
+*/
+
+.card-szabalyzat{
+    display: flex;
+    justify-content:center;
+    gap: 10px;    
+}
+.card-szabalyzat2{
+    display: flex;
+    justify-content:center;
+    gap: 10px;    
+}
+
+
 .kepmeretezes{
 
-    width: 20% !important; 
+    width: 20% !important;    
     margin-top: -28px !important; 
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) !important; /* Sötét árnyék hozzáadása */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) !important; /* Árnyék a képkereten */
+    
+
 }
+/* Telefonos nézethez és a többi eszközhöz a reszponzív beállítások */
+@media (max-width: 600px) {
+    .kepmeretezes {
+        width: 40% !important; /*Képek felbontása legyen nagyobb telefonos és egyéb eszközös nézetben */
+    }
+}
+
+
+.kepmeretezes2{
+
+    width: 20% !important;    
+    margin-top: -28px !important; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) !important;
+    
+
+}
+@media (max-width: 600px) {
+    .kepmeretezes2 {
+        width: 40% !important;
+    }
+    .card-szabalyzat2 {
+        display: block;
+                
+    }
+    
+}
+
+
+
+
+
+
+
+
+/* Valamiért ha teszel ide !importantot nem jeleniti meg a kártyákat */
+.card-img {
+    filter: brightness(0%);
+}
+
+
 
 .margo{
     
@@ -139,10 +207,7 @@ nav .nav-link{
 }
 
 
-/* Valamiért ha teszel ide !importantot nem jeleniti meg a kártyákat */
-.card-img {
-    filter: brightness(0%);
-}
+
 
 .center-button {
     margin-left: 5% !important;
@@ -154,16 +219,34 @@ nav .nav-link{
 
 .szoveg-felirat{
 
+    
     font-size: 70px !important;
     font-family: "fantasy" !important;
     font-weight: bold !important;
     color: #000000 !important;
-    text-shadow: 0 0 10px rgba(0, 19, 129, 0.8) !important; /* Árnyék a szöveg mögött */
+    text-shadow: 0 0 10px rgba(230, 44, 255, 0.8) !important; /* Árnyék a szöveg mögött */
     
 }
+@media only screen and (max-width: 600px) {
+    .szoveg-felirat {
+        /*Telefonos nézetben 50 px-től nagyobb beállítással már a div túlnyúlik a navbáron ami egy hézagot eredményez a navbár végétől a képernyő bal széléig. */
+        font-size: 50px !important;
+        font-family: "fantasy" !important;
+        font-weight: bold !important;
+        color: #000000 !important;
+        text-shadow: 0 0 10px rgba(230, 44, 255, 0.8) !important;
+        
+        
+    }
+}
 
-/*Login wrapper szerkeztése ------------------- */
-  
+.szoveg-textek{
+    text-shadow: 0 0 10px rgba(1, 0, 66, 0.8) !important; /* Árnyék a szöveg mögött */
+}
+
+
+
+/*Login - Register wrapper --------------------------------------- */
 
 .wrapper-loginhez {
     position: relative !important;
@@ -173,7 +256,6 @@ nav .nav-link{
     box-shadow: 0 0 30px rgba(0,0,0,0.5) !important;
     border: 2px solid white !important;
     border-radius: 40px !important;
-    /* 20-tól fentebb veszed homyályos lesz a wrapper box telos nézetben */
     backdrop-filter: blur(8px) !important;
     margin: 0 auto !important;
 }
@@ -189,6 +271,7 @@ nav .nav-link{
     .wrapper-loginhez {
 
         backdrop-filter:none !important;
+        /* Telefonos nézetben a blur elhomályosítja a wrappert */
         background-color: #558196 !important; 
         position: relative !important;
         width: 120% !important; 
@@ -226,7 +309,7 @@ nav .nav-link{
     box-shadow: 0 0 30px rgba(0,0,0,0.5) !important;
     border: 2px solid white !important;
     border-radius: 40px !important;
-    /* 20-tól fentebb veszed homyályos lesz a wrapper box telos nézetben */
+    /* 20-tól fentebb veszed homyályos lesz a wrapperbox telos nézetben */
     backdrop-filter: blur(8px) !important;
     margin: 0 auto !important;
 
@@ -264,6 +347,7 @@ nav .nav-link{
 
 }
 
+
 .p-white {
     color: white !important;
     font-family: "fantasy" !important;
@@ -288,9 +372,12 @@ nav .nav-link{
 
 }
 
+/*----------------------------------------------------------------*/
 
 
 
+
+/* Főoldal (Omen) ------ ----------------------------------------------------*/
 .card-wrapper {
     
     display:flex !important;
@@ -313,8 +400,8 @@ nav .nav-link{
     
     
 }
-/*
-.card-name{
+
+.card-price{
     
     background-color: white;
     border-radius: 10px ;
@@ -328,7 +415,7 @@ nav .nav-link{
 
 }
 
-*/
+
 
 
 

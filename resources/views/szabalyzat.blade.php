@@ -2,30 +2,38 @@
 
 @section('content')
 
+
+
 <h1 class="text-center mt-10 anima szoveg-felirat">Lethal Omen Játékszabályzat</h1>
-<h4 class="text-center mt-10 anima">A Lethal Omen egy a Yu-Gi-Oh!, Magic: the Gathering-hez hasonló "Trading Card Game" varázskártyákkal és szörny kártyákkal. </h4>
-<h4 class="text-center mt-10 anima">A kártyákat két nagy csoportba tudjuk sorolni, a szörnyek osztálya és a varázslapok osztálya.</h4>
-<p class="text-center mt-10 anima kattints">(Kattints a fekete kártyákra)</p>
+<h4 class="text-center mt-10 anima margo szoveg-textek">A Lethal Omen egy a Yu-Gi-Oh!, Magic: the Gathering-hez hasonló "Trading Card Game" varázskártyákkal és szörny kártyákkal. </h4>
+<h4 class="text-center mt-10 anima margo szoveg-textek">A kártyákat két nagy csoportba tudjuk sorolni, a szörnyek osztálya és a varázslapok osztálya.</h4>
+<p class="text-center mt-10 anima kattints szoveg-textek">(Kattints a fekete kártyákra)</p>
 
-<div class="text-center mt-10" id="cardContainer">
-    <img src="{{asset('img/kartyak/Battle of Legends.png')}}" class="img-fluid kepmeretezes card-img">
-    <img src="{{asset('img/kartyak/Witch Hunter.png')}}" class="img-fluid kepmeretezes card-img">
+<div class="text-center mt-10">
+    <dv class="card-szabalyzat">
+        <img src="{{asset('img/kartyak/Battle of Legends.png')}}" class="img-fluid kepmeretezes card-img">
+        <img src="{{asset('img/kartyak/Witch Hunter.png')}}" class="img-fluid kepmeretezes card-img">
+    </dv>
 </div>
 
-<h4 class="text-center mt-10 anima margo">A varázslapoknak csak képességeik vannak amik megvannak határozva, hogy meddig érvényesek vagy, hogy mikor lehet őket aktiválni. A szörnyeknek ellenben már vannak támadó (ATK) illetve életerő (HP) pontjaik. Vannak specifikusabb lények pl: Démonok, Istenek vagy Sárkányok amiknek megvannak határozva az idézési feltételeik pl: egy másik szörny áldozatával vagy varázskártya használatával.</h4>
+<h4 class="text-center mt-10 anima margo szoveg-textek">A varázslapoknak csak képességeik vannak amik megvannak határozva, hogy meddig érvényesek vagy, hogy mikor lehet őket aktiválni. A szörnyeknek ellenben már vannak támadó (ATK) illetve életerő (HP) pontjaik. Vannak specifikusabb lények pl: Démonok, Istenek vagy Sárkányok amiknek megvannak határozva az idézési feltételeik pl: egy másik szörny áldozatával vagy varázskártya használatával.</h4>
 
-<div class="text-center mt-10" id="cardContainer">
-    <img src="{{asset('img/kartyak/Thor.png')}}" class="img-fluid kepmeretezes card-img">
-    <img src="{{asset('img/kartyak/SaraZal.png')}}" class="img-fluid kepmeretezes card-img">
-    <img src="{{asset('img/kartyak/Lord of the Dimensions.png')}}" class="img-fluid kepmeretezes card-img">
+<div class="text-center mt-10">
+    <div class="card-szabalyzat2">
+        <img src="{{asset('img/kartyak/Thor.png')}}" class="img-fluid kepmeretezes2 card-img">
+        <img src="{{asset('img/kartyak/SaraZal.png')}}" class="img-fluid kepmeretezes2 card-img">    
+        <img src="{{asset('img/kartyak/Lord of the Dimensions.png')}}" class="img-fluid kepmeretezes2 card-img">
+    </div>
 </div>
 
+
+
 <br>
 <br>
-<h1 class="text-center mt-10 anima">Rulings (Vagyis a játék menete)</h1>
+<h1 class="text-center mt-10 anima szoveg-textek">Rulings (Vagyis a játék menete)</h1>
 <br>
 <br>
-<h4 class="anima margo">
+<h4 class="anima margo szoveg-textek">
     <ul>
         <li>Minden játékos paklija szigorúan 50-60 lapos lehet. Minden játékosnak 5000 életpontja van.</li>
         <br>
