@@ -378,6 +378,8 @@ hogy külön kezeljem a 3 képet a "display: block;" beállítással ami a 3. k�
 
 
 /* Főoldal (Omen) ------ ----------------------------------------------------*/
+
+
 .card-wrapper {
     
     padding-top: 10%;
@@ -386,15 +388,14 @@ hogy külön kezeljem a 3 képet a "display: block;" beállítással ami a 3. k�
     justify-content: space-between;
     margin: auto;
 }
-
-
 .cards{
     
     height: 700px;
     width: calc(50.33% - 200px);
     
  
-}.card-image{
+}
+.card-image{
     width: 100%;
     height: 500px;
     object-fit: contain;
@@ -402,6 +403,8 @@ hogy külön kezeljem a 3 képet a "display: block;" beállítással ami a 3. k�
     
     
 }
+
+
 
 .price-box {
 
@@ -417,7 +420,6 @@ hogy külön kezeljem a 3 képet a "display: block;" beállítással ami a 3. k�
     
     
 }
-
 .card-price{
     
     color:white;
@@ -427,15 +429,31 @@ hogy külön kezeljem a 3 képet a "display: block;" beállítással ami a 3. k�
     text-shadow: 5px 5px rgb(0, 0, 0);    
     
 }
-
 .price-box .kosar-ikon{
     font-size: 200%;
     cursor: pointer;
 }
 
 
-.jogviszony{
+
+
+.copyright{
     background-color:#558196;
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+    margin-top: 18%;
+    
+}
+.c-p{
+    color: #000000;
+    font-size: 100%;
+    font-style: italic;
+    font-weight: bold;
+}
+.copyright-logo{
+    width: 5%;
+    height: 5%;
 }
 
 
