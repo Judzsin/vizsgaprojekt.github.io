@@ -5,12 +5,26 @@
 <h1 class="text-center mt-10 anima szoveg-felirat">Elérhetőségek</h1>
 <h4 class="text-center mt-10 anima szoveg-textek margo">
 
-    <p>Üzemeltetők:</p>
-    <p>
-        <li>Farkas Dávid</li>
-        <li>Semencki Dávid Károly</li>
-        <li>Tisza Tibor</li>
-    </p>
+    <p class="uzemeltetoktext">Üzemeltetők:</p>
+    <p class="uzem-alt-text">(Kattints a képekre a githubos profilok elérésért)</p>
+    <div class="uzemeltetok">
+
+        <div class="semenckidavid" onclick="semenckidavidgithub()">
+            <img src="{{asset('img/profkepek/S_K_David.png')}}" class="img-fluid">
+            <p class="szoveg-textek sdavid">Semencki Dávid</p>
+        </div>
+
+        <div class="farkasdavid" onclick="farkasdavidgithub()">
+            <img src="{{asset('img/profkepek/F_David.png')}}" class="img-fluid">
+            <p class="szoveg-textek fdavid">Farkas Dávid</p>
+        </div>
+
+        <div class="tiszatibor" onclick="tiszatiborgithub()">
+            <img src="{{asset('img/profkepek/T_Tibor.png')}}" class="img-fluid">
+            <p class="szoveg-textek ttibor">Tisza Tibor</p>
+        </div>
+
+    </div>
 
     <br>
     <br>

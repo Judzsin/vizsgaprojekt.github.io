@@ -376,6 +376,112 @@ hogy külön kezeljem a 3 képet a "display: block;" beállítással ami a 3. k�
 
 
 
+/* Fejlesztői boxok az elérhetőségek oldalon ---------------------*/
+
+
+
+.uzemeltetoktext{
+    font-weight: bold;
+    font-size: 120%;
+}
+.uzem-alt-text{
+    font-family:cursive;
+    font-size: 80%;
+
+}
+
+
+
+
+.semenckidavid{
+    background-color: #00331f;
+    width: 9%;
+    border-radius: 10px;
+    
+}
+.semenckidavid:hover {
+    border: 2px solid #00bb09; 
+    cursor: pointer;
+}
+
+
+
+.farkasdavid{
+    background-color: #2b0000;
+    width: 9%;
+    border-radius: 10px;
+
+}
+.fdavid{
+    margin-top: 10%;
+}
+.farkasdavid:hover {
+    border: 2px solid #ff0000;
+    cursor: pointer;
+}
+
+
+
+.tiszatibor{
+    background-color: #000000;
+    width: 9%;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.tiszatibor:hover {
+    border: 2px solid #747474; 
+    cursor: pointer; 
+}
+
+
+.uzemeltetok{
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    
+}
+
+
+@media only screen and (max-width: 900px) {
+    .semenckidavid{
+        width: 70%;
+        
+    }
+    .sdavid{
+        font-size: 90%;
+        margin-top: 23%;
+    }
+
+
+    .farkasdavid{
+        width: 70%;
+        
+    }
+    .fdavid{
+        font-size: 90%;
+        margin-top: 23%;
+    }
+
+
+    .tiszatibor{
+        width: 70%;
+
+    }
+    .ttibor{
+        font-size: 90%;
+        margin-top: 23%;
+        margin-right: 2%;
+        margin-left: 2%;
+
+        
+    }    
+    
+}
+
+
+
+
 
 /* Főoldal (Omen) ------ ----------------------------------------------------*/
 

@@ -12,7 +12,18 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+function farkasdavidgithub(){
+    window.open('https://github.com/Judzsin', '_blank');
 
+}
+
+function semenckidavidgithub(){
+    window.open('https://github.com/davidvok-coder', '_blank');
+}
+
+function tiszatiborgithub(){
+    window.open('https://github.com/666Dracula999', '_blank');
+}
 
 
 
