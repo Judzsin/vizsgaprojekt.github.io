@@ -649,6 +649,13 @@ width: 60%;
 #kartyak{
     margin-top:150px !important;
 }
+#kartyak h1{
+  
+    margin-bottom:3cm !important;
+  
+   
+    
+}
 .row{
     margin-left: 0px !important;
     margin-right:  0px !important;;
@@ -701,7 +708,9 @@ input[type="search"]::placeholder{
     border-top-right-radius: 10px ;
     border-bottom-right-radius: 10px ;
 }
-
+.input-group .btn {
+    z-index: unset !important;
+}
 .profil{
     margin: 0 auto !important;
     width: fit-content;

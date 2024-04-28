@@ -36,6 +36,8 @@
 <br>
 <div class="row" id="kartyak">
     <h1 class="text-center text-white mb-4 ">Kártyák</h1>
+    <br>
+    <br>
     @foreach ($adat as $kartya)
     <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card">
