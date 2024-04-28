@@ -46,8 +46,11 @@ nav .nav-link{
     font-weight: bold !important;
 
 }
-#kijelentkezes{
+#kijelentkezes, #bejelentkezes{
     background: transparent !important;
+}
+#bejelentkezes{
+    display: block;
 }
 .nav-item{
     margin:0px 10px 0px !important;
@@ -293,9 +296,8 @@ hogy külön kezeljem a 3 képet a "display: block;" beállítással ami a 3. k�
 @media only screen and (max-width: 430px) {
     .wrapper-loginhez {
 
-        backdrop-filter:none !important;
-        /* Telefonos nézetben a blur elhomályosítja a wrappert */
-        background-color: #558196 !important; 
+        
+        background-color: transparent !important; 
         position: relative !important;
         width: 120% !important; 
         height: auto !important; 
@@ -384,11 +386,12 @@ hogy külön kezeljem a 3 képet a "display: block;" beállítással ami a 3. k�
 }
 
 .login-regist-gomb{
+    width: 100%;
 
     border-radius: 10px !important ;
     color: white !important;
-    background-color: rgb(17, 140, 255) !important;
-    border:1px white solid !important;
+    background-color: rgba(17, 140, 255, 0) !important;
+    border:2px white solid !important;
     font-size: 20px !important;
     text-decoration: none !important;
     font-weight: bold !important;

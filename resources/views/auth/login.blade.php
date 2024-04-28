@@ -48,7 +48,7 @@
                             <p class="p-white">Emlékezz rám</p>
                         </label>
                     </div>
-                    <a href="#" class="link-dark"><p class="p-white">Elfelejtett jelszó?</p></a>
+                
                 </div>
                 
                 

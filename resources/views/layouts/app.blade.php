@@ -61,7 +61,8 @@
                 </form>
                 
                      @else
-                    <a href="{{url('login')}}" class="gomb" >Bejelentkezés</span></a>
+                    
+                    <a href="{{url('login')}}" class="gomb" id="bejelentkezes">Bejelentkezés</span></a>
                     @endif
                     </li>
                   

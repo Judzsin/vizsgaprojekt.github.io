@@ -35,13 +35,13 @@
 
 <br>
 <div class="row" id="kartyak">
-    <h1 class="text-center text-white mb-4">Kártyák</h1>
+    <h1 class="text-center text-white mb-4 ">Kártyák</h1>
     @foreach ($adat as $kartya)
     <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card">
             <img src="{{ asset('storage/kartyak/'.$kartya->Kártyakép) }}" class="card-image " alt="Kártyakép">
             <div class="card-footer">
-                <p class="card-price">{{$kartya->Ár}} Lethal Coin <span class="kosar-ikon">🛒</span></p>
+                <p class="card-price" title="Fejlesztés alatt 😢">{{$kartya->Ár}} Lethal Coin <span class="kosar-ikon">🛒</span></p>
             </div>
         </div>
     </div>
