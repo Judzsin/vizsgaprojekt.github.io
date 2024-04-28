@@ -56,10 +56,10 @@
        
 </h4>
 <h2 class="text-center mt-10 anima szoveg-textek">Közösségi média</h2>
-<h4 class="text-center mt-10 anima szoveg-textek"> Fejlesztés alatt :sad:</h4>
+<h4 class="text-center mt-10 anima szoveg-textek"> Fejlesztés alatt 😢</h4>
 
-<a class="btn btn-outline-secondary center-button" href="{{ url('/') }}">
-    <h3>Vissza a főoldalra</h3>
+<a class=" gomb " href="{{ url('/') }}">
+    Vissza a főoldalra
 </a>
 </div>
 
