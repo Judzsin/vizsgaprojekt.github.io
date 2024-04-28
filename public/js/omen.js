@@ -27,6 +27,46 @@ function tiszatiborgithub(){
 
 
 
+/*----------------------------------------------------*/
+
+document.addEventListener('DOMContentLoaded', function() {
+    const inosuke = document.getElementById('inosuke');
+    const screenWidth = window.innerWidth;
+
+    function animate() {
+        // Balról jobbra mozgatás
+        inosuke.animate([
+            { left: '-10%', transform: 'scaleX(1)' },
+            { left: `${screenWidth}px`, transform: 'scaleX(1)' }
+        ], {
+            duration: 2000, // Az animáció időtartama 2 másodperc
+            easing: 'linear'
+        }).onfinish = function() {
+            // Gyors flip jobbra-balra
+            inosuke.style.transform = 'scaleX(-1)';
+
+            // Jobbról balra mozgatás
+            inosuke.animate([
+                { left: `${screenWidth}px`, transform: 'scaleX(-1)' },
+                { left: '-10%', transform: 'scaleX(-1)' }
+            ], {
+                duration: 2000, // Az animáció időtartama 2 másodperc
+                easing: 'linear'
+            }).onfinish = function() {
+                // Gyors flip vissza balra-jobbra
+                inosuke.style.transform = 'scaleX(1)';
+
+                // Újraindítja az animációs ciklust
+                animate();
+            };
+        };
+    }
+
+    // Animáció elindítása
+    animate();
+});
+
+
 
 
 

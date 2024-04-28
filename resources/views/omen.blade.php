@@ -18,6 +18,18 @@
 
 <br>
 
+<div class="comings">
+
+    <div class="coming-card1">
+        <img src="{{asset('img/news/news1.png')}}" width="60%" class="newest1">
+    </div>
+    
+    <div class="coming-card2">
+        <img src="{{asset('img/news/news2.png')}}" width="80%" height="100%" class="newest2">
+    </div>
+    
+
+</div>
 
 
 
