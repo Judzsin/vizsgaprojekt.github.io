@@ -38,7 +38,7 @@ nav .nav-link{
     padding:10px !important;
     border-radius: 10px !important ;
     color: white !important;
-    background-color: black !important;
+    backdrop-filter: blur(25px) !important;
     border:2px white solid !important;
     font-size: 23px !important;
     transition: 0.4s all !important;
@@ -46,12 +46,15 @@ nav .nav-link{
     font-weight: bold !important;
 
 }
+#kijelentkezes{
+    background: transparent !important;
+}
 .nav-item{
     margin:0px 10px 0px !important;
 }
 
 .gomb:hover{
-    background-color: white !important;
+    background: white !important;
     color: black !important;
     transition: 0.4s all !important;
 }
@@ -216,15 +219,32 @@ hogy külön kezeljem a 3 képet a "display: block;" beállítással ami a 3. k�
     margin-top: 180px !important;
 }
 
-
+.hom{
+   
+    background-color: #193444cb;
+    padding: 40px;
+    margin: 50px !important;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+@media only screen and (max-width: 990px) {
+    .hom{
+        margin: 10px !important;
+        margin-top: 40px !important;
+        padding: 30px;
+    }
+}
 .szoveg-felirat{
 
-    
+    width: fit-content;
+    margin: 0 auto !important;
+    padding-top: 100px !important;
     font-size: 70px !important;
     font-family: "fantasy" !important;
     font-weight: bold !important;
-    color: #000000 !important;
-    text-shadow: 0 0 10px rgba(230, 44, 255, 0.8) !important; /* Árnyék a szöveg mögött */
+    color: #ffffff !important;
+    padding-bottom: 7px;
+    border-bottom: 2px white solid;
     
 }
 @media only screen and (max-width: 600px) {
@@ -233,15 +253,18 @@ hogy külön kezeljem a 3 képet a "display: block;" beállítással ami a 3. k�
         font-size: 50px !important;
         font-family: "fantasy" !important;
         font-weight: bold !important;
-        color: #000000 !important;
-        text-shadow: 0 0 10px rgba(230, 44, 255, 0.8) !important;
-        
+        color: #ffffff !important;
+   
+        padding-bottom: 7px;
+        border-bottom: 2px white solid;
         
     }
 }
 
 .szoveg-textek{
+    font-weight: normal !important;
     text-shadow: 0 0 10px rgba(1, 0, 66, 0.8) !important; /* Árnyék a szöveg mögött */
+    padding-bottom: 20px !important;
 }
 
 
@@ -490,60 +513,74 @@ hogy külön kezeljem a 3 képet a "display: block;" beállítással ami a 3. k�
     padding-top: 10%;
     display:flex !important;
     flex-direction: wrap !important; 
-    justify-content: space-between;
+    gap:5%;
     margin: auto;
 }
 .cards{
     
-    height: 700px;
-    width: calc(50.33% - 200px);
+    height: 70%;
+    width:70%;
+    margin: auto;
     
- 
-}
-.card-image{
-    width: 100%;
-    height: 500px;
-    object-fit: contain;
-  
-        
-}
-@media only screen and (max-width: 900px) {
-    .card-image{
-        width: 100%;
-        margin-left: 10%;
-    }
-    .card-wrapper{
-        gap:5%
-
-    }
-
-
-
+    
+     
 }
 
 
 
 .price-box {
-
-    display: flex;
+    width: fit-content;
     border-radius: 10px;
     padding-top: 3%;
-    margin-left: 25%;
+    margin:0 auto !important;
+
     background-color: rgb(57, 14, 97);
     box-shadow: 5px 5px 5px 10px rgba(152, 88, 224, 0.5);
-    width: 40%;
-    height: 10%; 
-    align-items: center; /* Középre igazítja a gyermekelemeket függőlegesen */
-    
-    
+            
 }
+
+
+
+.card-image{
+height: 60%;
+width: 60%;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .card-image{
+        height: 80%;
+        width: 80%;
+        }
+        .coming-card{
+           scale: 120%;
+           margin-bottom: 2.5cm !important;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .card-price{
-    
+    padding: 10px !important;
+    border:2px solid white;
+    border-radius:20px !important;
+    width: fit-content !important;
     color:white;
-    margin-left: 5%;
+    margin:0 auto !important;
     font-size: 24px ;
     font-weight: bold ;
-    text-shadow: 5px 5px rgb(0, 0, 0);    
+   backdrop-filter: blur(5px) !important;
     
 }
 .price-box .kosar-ikon{
@@ -555,7 +592,7 @@ hogy külön kezeljem a 3 képet a "display: block;" beállítással ami a 3. k�
 
 
 .copyright{
-    background-color:#558196;
+    background-color:#6692ad;
     text-align: center;
     width: 100%;
     padding: 1%;
@@ -580,21 +617,42 @@ hogy külön kezeljem a 3 képet a "display: block;" beállítással ami a 3. k�
     
     
 }
-.coming-card1{
-    display: flex;
+.coming-card{
+    padding-left:70px  !important;
+    padding-right:70px  !important;
+   
 }
-.coming-card1{
-    display: flex;
-}
+
 .newest1{
-    margin-left: 13%;
+
     border-radius: 20px;
 
 }
 .newest2{
-    margin-right: 1%;
     border-radius: 20px;
 
+}
+
+
+
+
+
+.card{
+    margin:0 auto !important;
+    margin: 20px !important;
+    background-color: transparent !important;
+    border:none !important;
+}
+#kartyak{
+    margin-top:150px !important;
+}
+.row{
+    margin-left: 0px !important;
+    margin-right:  0px !important;;
+}
+
+.card img{
+    margin:0 auto !important;
 }
 
 
@@ -605,18 +663,61 @@ hogy külön kezeljem a 3 képet a "display: block;" beállítással ami a 3. k�
 
 
 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1b3342;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #335a77;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #203b4d;
+  }
 
 
 
+input[type="search"]{
+    background-color: rgba(255, 255, 255, 0.253) !important;
+    backdrop-filter: blur(20px) !important;
+    color: white !important;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+}
+input[type="search"]::placeholder{
+    color: white !important;
+}
+.input-group button{
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.253);
+    backdrop-filter: blur(20px) !important;
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+}
 
+.profil{
+    margin: 0 auto !important;
+    width: fit-content;
+    backdrop-filter: blur(20px ) !important;
+  
+    color: white !important;
+    margin-top: 20vh !important;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 20px !important;
+}
+.profil .adatok{
+    border-top: white 2px solid;
+    padding: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.navbar{
+    position: sticky !important;
+    top:0;
+    left: 0;
+    z-index: 1;
+}

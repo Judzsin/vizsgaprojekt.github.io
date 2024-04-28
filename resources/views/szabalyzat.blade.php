@@ -5,6 +5,7 @@
 
 
 <h1 class="text-center mt-10 anima szoveg-felirat">Lethal Omen Játékszabályzat</h1>
+<div class="hom">
 <h4 class="text-center mt-10 anima margo szoveg-textek">A Lethal Omen egy a Yu-Gi-Oh!, Magic: the Gathering-hez hasonló "Trading Card Game" varázskártyákkal és szörny kártyákkal. </h4>
 <h4 class="text-center mt-10 anima margo szoveg-textek">A kártyákat két nagy csoportba tudjuk sorolni, a szörnyek osztálya és a varázslapok osztálya.</h4>
 <p class="text-center mt-10 anima kattints szoveg-textek">(Kattints a fekete kártyákra)</p>
@@ -64,11 +65,11 @@
 
 
 
-<a class="btn btn-outline-secondary center-button" href="{{ url('/') }}">
-    <h3>Vissza a főoldalra</h3>
+<a class=" gomb " href="{{ url('/') }}">
+    Vissza a főoldalra
 </a>
 
-
+</div>
 
 
 

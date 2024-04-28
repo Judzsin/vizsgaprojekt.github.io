@@ -3,17 +3,15 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\KartyaController;
-
-    
+use App\Http\Controllers\profileController;
+use App\Http\Controllers\homeController;
 
 Auth::routes();
 
 
 Route::get('/', [KartyaController::class,'index'] );
 
-Route::get('/home', function() {
-    return view('home');
-});
+
 Route::get('/szabalyzat', function () {
     return view('szabalyzat');
 });
@@ -28,10 +26,10 @@ Route::get('/elerhetosegek', function () {
 Route::get('/rolunk', function () {
     return view('rolunk');
 });
-
-Route::get('/dashboard', function(){
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/home', function(){
+    Route::get('/', [homeController::class,'index'] );
+    return view('home');
+})->middleware(['auth', 'verified'])->name('home');
 
 Route::middleware('auth')->group(function(){
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

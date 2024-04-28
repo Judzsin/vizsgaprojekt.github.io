@@ -4,6 +4,7 @@
                  
 <h1 class="text-center mt-10 anima szoveg-felirat">Rólunk</h1>
 
+<div class="hom">
 <h2 class="text-center mt-10 anima szoveg-textek">Kik vagyunk?</h2>
 
 <h4 class="text-center mt-10 anima">
@@ -30,12 +31,12 @@
 
 
 <h3 class="text-center mt-10 anima szoveg-textek">Közösségi média</h3>
-<h4 class="text-center mt-10 anima szoveg-textek"> Fejlesztés alatt :sad:</h4>
+<h4 class="text-center mt-10 anima szoveg-textek"> Fejlesztés alatt 😢</h4>
 
-<a class="btn btn-outline-secondary center-button gomb-elhelyezes" href="{{ url('/') }}">
-    <h3>Vissza a főoldalra</h3>
+<a class=" gomb " href="{{ url('/') }}">
+    Vissza a főoldalra
 </a>
- 
+</div>
 
 
 

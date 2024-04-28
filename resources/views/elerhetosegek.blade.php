@@ -3,6 +3,7 @@
 @section('content')
 
 <h1 class="text-center mt-10 anima szoveg-felirat">Elérhetőségek</h1>
+<div class="hom">
 <h4 class="text-center mt-10 anima szoveg-textek margo">
 
     <p class="uzemeltetoktext">Üzemeltetők:</p>
@@ -60,6 +61,6 @@
 <a class="btn btn-outline-secondary center-button" href="{{ url('/') }}">
     <h3>Vissza a főoldalra</h3>
 </a>
-
+</div>
 
 @endsection

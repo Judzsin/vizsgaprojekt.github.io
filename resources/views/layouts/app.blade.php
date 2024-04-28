@@ -48,10 +48,23 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('rolunk')}}" id="">Rólunk</span></a>
                     </li>
+                    @if (Auth::user())
                     <li class="nav-item">
-                    <a href="{{url('login')}}" class="gomb" id="bejelentkezesgomb">Bejelentkezés</span></a>
+                    <a class="nav-link" href="{{url('home')}}" id="">Profilom</span></a>
+                    </li> 
+                    @endif
+                    <li class="nav-item">
+                    @if (Auth::user())
+                    <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button type="submit" class="gomb" id="kijelentkezes">Kijelentkezés </button>
+                </form>
+                
+                     @else
+                    <a href="{{url('login')}}" class="gomb" >Bejelentkezés</span></a>
+                    @endif
                     </li>
-
+                  
                 </ul>
             </div>
         </div>
@@ -59,6 +72,7 @@
 
 
                 @yield('content')
+                @include('footer')
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         </div>
         

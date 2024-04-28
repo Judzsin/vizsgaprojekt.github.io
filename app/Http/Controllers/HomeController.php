@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Bootstrap;
-
+use App\Models\user;
 class HomeController extends Controller
 {
     /**
@@ -24,7 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $user = User::all();
+        return view('home')->with('user',$user);
 
         
     }
